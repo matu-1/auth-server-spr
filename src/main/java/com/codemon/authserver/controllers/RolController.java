@@ -1,6 +1,7 @@
 package com.codemon.authserver.controllers;
 
 import com.codemon.authserver.dtos.CreateRolDto;
+import com.codemon.authserver.dtos.PermisoDto;
 import com.codemon.authserver.dtos.UpdateRolDto;
 import com.codemon.authserver.models.Permiso;
 import com.codemon.authserver.models.Rol;
@@ -51,8 +52,8 @@ public class RolController {
     }
 
     @GetMapping("permiso/{id}")
-    public Response<List<Permiso>> findPermisos(@PathVariable Long id){
-        List<Permiso> result = rolService.findPermisos(id);
+    public Response<List<PermisoDto>> findPermisos(@PathVariable Long id){
+        List<PermisoDto> result = rolService.findPermisos(id);
         return new Response(result);
     }
 }

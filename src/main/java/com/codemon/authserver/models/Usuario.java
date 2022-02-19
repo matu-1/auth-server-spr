@@ -1,5 +1,6 @@
 package com.codemon.authserver.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
@@ -12,6 +13,7 @@ public class Usuario extends BaseEntity{
     private String nombre;
     @Column(length = 100, unique = true)
     private String email;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Column(length = 150)
     private String password;
     @Column(length = 10)

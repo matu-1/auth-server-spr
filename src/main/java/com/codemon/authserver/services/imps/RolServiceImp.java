@@ -1,6 +1,7 @@
 package com.codemon.authserver.services.imps;
 
 import com.codemon.authserver.dtos.CreateRolDto;
+import com.codemon.authserver.dtos.PermisoDto;
 import com.codemon.authserver.dtos.UpdateRolDto;
 import com.codemon.authserver.models.Permiso;
 import com.codemon.authserver.models.Rol;
@@ -23,7 +24,7 @@ public class RolServiceImp extends CrudServiceImp<Rol, CreateRolDto> implements 
     }
 
     @Override
-    public List<Permiso> findPermisos(Long rolId) {
+    public List<PermisoDto> findPermisos(Long rolId) {
         return rolRepository.findPermisos(rolId);
     }
 
