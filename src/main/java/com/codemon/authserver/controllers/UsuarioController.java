@@ -44,7 +44,7 @@ public class UsuarioController {
 
     @Secured(Permission.USUARIO_EDITAR)
     @PutMapping("{id}")
-    public Response<Usuario> update(@PathVariable long id, @RequestBody UpdateUsuarioDto body){
+    public Response<Usuario> update(@PathVariable long id, @Valid @RequestBody UpdateUsuarioDto body){
         Usuario result = usuarioService.update(id, body);
         return new Response(result);
     }
