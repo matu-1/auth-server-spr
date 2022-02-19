@@ -1,7 +1,8 @@
-package com.codemon.authserver.repositories;
+package com.codemon.authserver.repositories.imps;
 
 import com.codemon.authserver.models.Permiso;
 import com.codemon.authserver.models.Rol;
+import com.codemon.authserver.repositories.RolRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

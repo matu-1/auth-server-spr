@@ -35,8 +35,6 @@ public class AuthController {
     @Operation(summary = "Renueva el token")
     @GetMapping("renew")
     Response<UsuarioTokenDto> renew(Principal principal){
-        System.out.println(principal);
-        System.out.println(principal.getName());
         UsuarioTokenDto result = this.authService.renew(Long.parseLong(principal.getName()));
         return new Response<>(result);
     }

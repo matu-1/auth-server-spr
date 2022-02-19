@@ -1,5 +1,6 @@
-package com.codemon.authserver.repositories;
+package com.codemon.authserver.repositories.imps;
 
+import com.codemon.authserver.repositories.CrudRepository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;

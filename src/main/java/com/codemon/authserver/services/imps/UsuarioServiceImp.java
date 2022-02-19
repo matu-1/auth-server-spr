@@ -1,8 +1,9 @@
-package com.codemon.authserver.services;
+package com.codemon.authserver.services.imps;
 
 import com.codemon.authserver.dtos.CreateUsuarioDto;
 import com.codemon.authserver.models.Usuario;
 import com.codemon.authserver.repositories.UsuarioRepository;
+import com.codemon.authserver.services.UsuarioService;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 

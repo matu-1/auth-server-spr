@@ -1,10 +1,12 @@
-package com.codemon.authserver.services;
+package com.codemon.authserver.services.imps;
 
 import com.codemon.authserver.dtos.CreateUsuarioDto;
 import com.codemon.authserver.dtos.LoginDto;
 import com.codemon.authserver.dtos.UsuarioTokenDto;
 import com.codemon.authserver.models.Usuario;
 import com.codemon.authserver.repositories.UsuarioRepository;
+import com.codemon.authserver.services.AuthService;
+import com.codemon.authserver.services.UsuarioService;
 import com.codemon.authserver.utils.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;

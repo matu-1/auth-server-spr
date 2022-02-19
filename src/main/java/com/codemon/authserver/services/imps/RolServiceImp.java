@@ -1,4 +1,4 @@
-package com.codemon.authserver.services;
+package com.codemon.authserver.services.imps;
 
 import com.codemon.authserver.dtos.CreateRolDto;
 import com.codemon.authserver.dtos.UpdateRolDto;
@@ -6,12 +6,12 @@ import com.codemon.authserver.models.Permiso;
 import com.codemon.authserver.models.Rol;
 import com.codemon.authserver.models.RolPermiso;
 import com.codemon.authserver.repositories.RolRepository;
+import com.codemon.authserver.services.RolService;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class RolServiceImp extends CrudServiceImp<Rol, CreateRolDto> implements RolService {

@@ -1,7 +1,8 @@
-package com.codemon.authserver.services;
+package com.codemon.authserver.services.imps;
 
 import com.codemon.authserver.models.BaseEntity;
 import com.codemon.authserver.repositories.CrudRepository;
+import com.codemon.authserver.services.CrudService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;

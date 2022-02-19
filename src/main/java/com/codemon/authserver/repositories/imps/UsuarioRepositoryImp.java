@@ -1,6 +1,7 @@
-package com.codemon.authserver.repositories;
+package com.codemon.authserver.repositories.imps;
 
 import com.codemon.authserver.models.Usuario;
+import com.codemon.authserver.repositories.UsuarioRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
